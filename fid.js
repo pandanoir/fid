@@ -18,6 +18,12 @@ class FID {
             this.smallRankData[smallBlockIndex] +
             this.bitTable[i3];
     }
+    rank0(n) {
+        return n - this.rank(n);
+    }
+    rank1(n) {
+        return this.rank(n);
+    }
     select(n) {
         var len = this.rawArray.length;
         var start = 1, end = len;
@@ -28,6 +34,20 @@ class FID {
         }
         if (this.rank(start) === n) return start;
         return -1;
+    }
+    select0(n) {
+        var len = this.rawArray.length;
+        var start = 1, end = len;
+        while (start < end) {
+            var mid = 0 | (start + end) / 2;
+            if (this.rank0(mid) < n) start = mid + 1;
+            else if (this.rank0(mid) >= n) end = mid;
+        }
+        if (this.rank0(start) === n) return start;
+        return -1;
+    }
+    select1(n) {
+        return select(n);
     }
 }
 function createRankData(arr) {
