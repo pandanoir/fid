@@ -9,6 +9,7 @@ class FID {
         this.smallBlockSize = Math.ceil(Math.log(arr.length) / 2);
     }
     rank(n) {
+        if (n === 0) return 0;
             var bigBlockIndex = Math.floor((n - 1) / this.bigBlockSize);
             var smallBlockIndex = bigBlockIndex * Math.ceil(this.bigBlockSize / this.smallBlockSize) + Math.floor((n - 1) % this.bigBlockSize / this.smallBlockSize);
             var i3 = zerofill(
