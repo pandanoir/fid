@@ -33,7 +33,7 @@ class FID {
             if (this.rank(mid) < n) start = mid + 1;
             else if (this.rank(mid) >= n) end = mid;
         }
-        if (this.rank(start) === n) return start;
+        if (this.rank(start) === n) return start - 1;
         return -1;
     }
     select0(n) {
@@ -44,7 +44,7 @@ class FID {
             if (this.rank0(mid) < n) start = mid + 1;
             else if (this.rank0(mid) >= n) end = mid;
         }
-        if (this.rank0(start) === n) return start;
+        if (this.rank0(start) === n) return start - 1;
         return -1;
     }
     select1(n) {
