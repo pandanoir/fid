@@ -1,0 +1,19 @@
+{
+  "name": "fid",
+  "version": "0.0.1",
+  "description": "This library provides FID(Fully Indexable Dictionary) in JavaScript.",
+  "main": "fid.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pandanoir/fid.git"
+  },
+  "author": "Naoto Ikuno <moon_in_france@yahoo.co.jp>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pandanoir/fid/issues"
+  },
+  "homepage": "https://github.com/pandanoir/fid#readme"
+}
