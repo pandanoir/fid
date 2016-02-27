@@ -1,6 +1,6 @@
 {
   "name": "fid",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "This library provides FID(Fully Indexable Dictionary) in JavaScript.",
   "main": "index.js",
   "scripts": {
